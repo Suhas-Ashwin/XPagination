@@ -13,7 +13,7 @@ export default function App() {
         "https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json"
       )
       .then((res) => setData(res.data))
-      .catch((err) => alert("Unable to fetch data", err));
+      .catch((err) => alert("Failed to fetch data", err));
   }, []);
 
   const handlePrev = () => {
